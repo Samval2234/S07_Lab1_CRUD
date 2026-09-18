@@ -5,11 +5,7 @@
         <div class="col-10">
             <h2 class="text-primary">Zombie</h2>
         </div>
-        <div class="col-2 text-right">
-            <a asp-action="Create" class="btn btn-success">
-                Create New Zombie
-            </a>
-        </div>
+       
     </div>
 
     <div class="row">
@@ -20,12 +16,6 @@
                     <h3 class="card-title"> @item.Name </h3>
                     <h5> @item.Point </h5>
                     <h5 class="text-success" > @item.ZombieType.TypeName</h5>
-                    <a asp-action="Edit" asp-route-Id="@item.Id" class="btn btn-info">
-                        Edit
-                    </a>
-                    <a  asp-action="Delete" asp-route-Id ="@item.Id" class="btn btn-danger">
-                        Delete
-                    </a>
                 </div>
             </div>
         }
